@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motoria - Автотовары в женском стиле</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script> 
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-car"></i>
+                <span>Motoria</span>
+            </div>
+            
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="#" class="nav-link active" data-page="home">Главная</a></li>
+                    <li><a href="#" class="nav-link" data-page="catalog">Каталог</a></li>
+                    <li><a href="#" class="nav-link" data-page="about">О нас</a></li>
+                    <li><a href="#" class="nav-link" data-page="contacts">Контакты</a></li>
+                    <li><a href="#" class="nav-link" data-page="delivery">Доставка</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-icons">
+                <a href="#" id="favorites-link" data-page="favorites">
+                    <i class="far fa-heart"></i>
+                    <span class="favorites-count">0</span>
+                </a>
+                <a href="#" id="cart-link" data-page="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <!-- Смайлик для админки -->
+                <div class="admin-icon" id="admin-link" data-page="admin">
+                    <i class="fas fa-user-cog"></i>
+                </div>
+            </div>
+            
+            <div class="burger-menu" id="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        
+        <!-- Мобильное меню -->
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="close-menu" id="close-menu">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul>
+                <li><a href="#" class="nav-link active" data-page="home">Главная</a></li>
+                <li><a href="#" class="nav-link" data-page="catalog">Каталог</a></li>
+                <li><a href="#" class="nav-link" data-page="about">О нас</a></li>
+                <li><a href="#" class="nav-link" data-page="contacts">Контакты</a></li>
+                <li><a href="#" class="nav-link" data-page="delivery">Доставка</a></li>
+                <li><a href="#" class="nav-link" data-page="favorites">Избранное</a></li>
+                <li><a href="#" class="nav-link" data-page="cart">Корзина</a></li>
+                <li><a href="#" class="nav-link" data-page="admin">Админка</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <div class="container main-content">
+        <!-- Сайдбар -->
+        <aside class="sidebar" id="sidebar">
+            <h3>Категории</h3>
+            <ul id="categories-list">
+                <!-- Категории будут сгенерированы через JS -->
+            </ul>
+            
+            <h3 style="margin-top: 30px;">Акции</h3>
+            <p>Скидка 20% на все аксессуары для салона!</p>
+            <p>Бесплатная доставка при заказе от 3000 руб.</p>
+        </aside>
+        
+        <!-- Контент страницы -->
+        <main class="content" id="content">
+            <!-- Контент будет обновляться через JS -->
+        </main>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>Motoria</h3>
+                <p>Masterpiece Of Taste On Road Innovations Aesthetics</p>
+                <div class="social-icons">
+                    <a href="https://vk.com/?u=2&to=L2luZGV4LnBocA--"><i class="fab fa-vk"></i></a>
+                    <a href="https://web.telegram.org/"><i class="fab fa-telegram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Разделы</h3>
+                <ul>
+                    <li><a href="#" class="nav-link" data-page="home">Главная</a></li>
+                    <li><a href="#" class="nav-link" data-page="catalog">Каталог</a></li>
+                    <li><a href="#" class="nav-link" data-page="about">О нас</a></li>
+                    <li><a href="#" class="nav-link" data-page="contacts">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Помощь</h3>
+                <ul>
+                    <li><a href="#" class="nav-link" data-page="delivery">Доставка и оплата</a></li>
+                    <li><a href="#">Возврат товара</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +7 (999) 123-45-67</li>
+                    <li><i class="fas fa-envelope"></i> info@motoria.ru</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Автолюбителей, 15</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container copyright">
+            <p>&copy; 2026 Motoria. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
